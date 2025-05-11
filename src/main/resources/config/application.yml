@@ -1,0 +1,8 @@
+logging:
+  level:
+    com:
+      itstudio:
+        bookservice: INFO
+spring:
+  application:
+    name: BookServiceApp
