@@ -1,0 +1,15 @@
+{
+  "actions" : [ {
+    "module" : "init",
+    "date" : "2025-05-11T09:16:41.903577352Z",
+    "properties" : {
+      "packageName" : "com.itstudio.bookservice",
+      "projectName" : "Book Service",
+      "baseName" : "bookServiceApp",
+      "serverPort" : 8080,
+      "endOfLine" : "lf",
+      "indentSize" : 2,
+      "springConfigurationFormat" : "yaml"
+    }
+  } ]
+}
