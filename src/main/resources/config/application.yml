@@ -15,13 +15,13 @@ spring:
     hikari:
       auto-commit: false
       poolName: Hikari
-    password: ''
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:postgresql://localhost:5432/bookServiceApp
-    username: bookServiceApp
+    url: jdbc:postgresql://localhost:5432/BookServiceApp
+    username: TrySample
+    password: ''
   jpa:
     hibernate:
-      ddl-auto: none
+      ddl-auto: update
       naming:
         implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
         physical-strategy: org.hibernate.boot.model.naming.CamelCaseToUnderscoresNamingStrategy
@@ -43,3 +43,9 @@ spring:
     default-property-inclusion: non_absent
 server:
   port: 8080
+springdoc:
+  enable-native-support: true
+  swagger-ui:
+    operationsSorter: alpha
+    tagsSorter: alpha
+    tryItOutEnabled: true
