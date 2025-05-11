@@ -47,5 +47,17 @@
       "indentSize" : 2,
       "springConfigurationFormat" : "yaml"
     }
+  }, {
+    "module" : "checkstyle",
+    "date" : "2025-05-11T09:16:42.177451637Z",
+    "properties" : {
+      "packageName" : "com.itstudio.bookservice",
+      "projectName" : "Book Service",
+      "baseName" : "bookServiceApp",
+      "serverPort" : 8080,
+      "endOfLine" : "lf",
+      "indentSize" : 2,
+      "springConfigurationFormat" : "yaml"
+    }
   } ]
 }
