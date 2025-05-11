@@ -45,4 +45,8 @@
     <module name="StaticVariableName" />
     <module name="TypeName" />
   </module>
+
+  <module name="SuppressionFilter">
+    <property name="file" value="checkstyle-suppressions.xml"/>
+  </module>
 </module>
