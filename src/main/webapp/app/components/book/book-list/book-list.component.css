@@ -1,0 +1,19 @@
+.container {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    width: 80%;
+    margin-top: 20px;
+}
+
+.actions button {
+    margin-right: 8px;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
