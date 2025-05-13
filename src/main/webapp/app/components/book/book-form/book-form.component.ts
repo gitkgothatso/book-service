@@ -40,11 +40,12 @@ export class BookFormComponent implements OnInit {
     if (this.id) {
       this.editing = true;
       this.bookService.get(this.id).subscribe(book => this.form.patchValue(book));
+      this.form.get('isbn')?.disable(); // 👈 disable ISBN field
     }
   }
 
   submit(): void {
-    const book: Book = this.form.value;
+    let book: Book = this.form.getRawValue(); // 👈 includes disabled fields
     const action = this.editing ? this.bookService.update(this.id!, book) : this.bookService.create(book);
 
     action.subscribe(() => this.router.navigate(['/books']));

@@ -16,7 +16,7 @@ import { BookService } from '../../../services/book.service';
 })
 export class BookListComponent implements OnInit {
   books: Book[] = [];
-  displayedColumns: string[] = ['title', 'author', 'actions'];
+  displayedColumns: string[] = ['isbn', 'title', 'author', 'published', 'actions'];
 
   constructor(
     private bookService: BookService,
